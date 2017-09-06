@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link href="site.css" rel="stylesheet">
+</head>
+<body>
+<!-- site header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><strong>Контакты</strong></li>
+        </ul>
+    </nav>
+    <h1>Сконтактировать программиста Мое Имя</h1>
+
+</header>
+<main>
+    <form action="form.php" method="post">
+        <div>
+            <label>Who</label>
+            <input type="text" name="user">
+        </div>
+        <div>
+            <label>Email *</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label>Secret</label>
+            <input type="password" name="secret">
+        </div>
+        <div>
+            <label>Can I SPAM you back?</label>
+            <input type="hidden" name="can_spam" value="0">
+            <input type="checkbox" name="can_spam" value="1">
+        </div>
+        <div>
+            <label>Country</label>
+            <select name="country">
+                <option selected value="uk">Ukraine</option>
+                <option value="ru">Russian Federation</option>
+                <option value="eu">Euro Union</option>
+                <option value="us">USA</option>
+                <option value="ot">Other</option>
+            </select>
+        </div>
+        <div>
+            <label>Sex</label><br>
+            Male: <input checked type="radio" name="sex" value="M"><br>
+            Female: <input type="radio" name="sex" value="F">
+        </div>
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+</main>
+<!-- site footer -->
+<footer>
+    <div class="odd-text footer-text">&copy; 2017 Мое Имя</div>
+</footer>
+</body>
+</html>
